@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reduxlessscss';
+  counter: number;
+
+  constructor() {
+    this.counter = 20;
+
+  }
+
+  increase(): void {
+    this.counter = this.counter + 1;
+  }
+  decrease(): void {
+    this.counter = this.counter - 1;
+  }
 }
